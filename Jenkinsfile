@@ -10,7 +10,7 @@ pipeline {
 
         stage('Copy to Test Server') {
             steps {
-                sh 'scp -r . ubuntu@172.31.82.99:/path/to/directory'
+                sh 'scp -r . ubuntu@172.31.82.99:/home/ubuntu/jenkins'
             }
         }
     }
